@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test.scss */ \"./src/test.scss\");\n/* harmony import */ var _test_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_test_scss__WEBPACK_IMPORTED_MODULE_0__);\n/*\r\n * Title: index.js\r\n *\r\n * Description: trying out web pack\r\n *\r\n * Author: Ben Merchant\r\n*/\r\n\r\n\r\nconst window = {};\r\n\r\nfunction logThis() {\r\n  console.log('Sass loaded');\r\n};\r\n\r\nlogThis();\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test.scss */ \"./src/test.scss\");\n/* harmony import */ var _test_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_test_scss__WEBPACK_IMPORTED_MODULE_0__);\n/*\r\n * Title: index.js\r\n *\r\n * Description: trying out web pack\r\n *\r\n * Author: Ben Merchant\r\n*/\n\nconst window = {};\n\nfunction logThis() {\n  console.log('Sass loaded');\n}\n\n;\nlogThis();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
