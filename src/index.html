@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html dir="ltr">
   <head>
-    <!-- require("html-loader?interpolate=require!./file.ftl"); -->
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body ng-app="bendev">
-    <root>
+    <div>
+      div bg should be lightgreen!
       <h1><%= htmlWebpackPlugin.options.title %></h1>
       <span class="loader">Loading...</span>
       <h2>Is this red?</h2>
-    </root>
+    </div>
   </body>
 </html>
