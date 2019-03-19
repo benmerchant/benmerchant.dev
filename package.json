@@ -2,9 +2,40 @@
   "name": "benmerchant.dev",
   "version": "0.0.1",
   "description": "Professional website for full stack web developer Ben Merchant.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack-dev-server --inline --hot",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/cli": "~7.0.0",
+    "@babel/core": "~7.0.0",
+    "@babel/preset-env": "~7.3.4",
+    "clean-webpack-plugin": "~2.0.1",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "grunt": "~1.0.3",
+    "grunt-babel": "~8.0.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-cssmin": "~3.0.0",
+    "grunt-contrib-jshint": "~2.1.0",
+    "grunt-contrib-nodeunit": "~2.0.0",
+    "grunt-contrib-qunit": "~3.1.0",
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-contrib-uglify": "~4.0.0",
+    "grunt-contrib-uglify-es": "~3.3.0",
+    "grunt-contrib-watch": "~1.1.0",
+    "html-webpack-plugin": "~3.2.0",
+    "http-server": "~0.11.1",
+    "load-grunt-tasks": "~4.0.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglify-js": "~3.4.10",
+    "webpack": "^4.29.6",
+    "webpack-cli": "~3.3.0",
+    "webpack-dev-server": "~3.2.1"
   },
   "repository": {
     "type": "git",
@@ -14,8 +45,7 @@
     "portfolio",
     "job",
     "seeker",
-    "hire",
-    "me",
+    "hire-me",
     "angularjs"
   ],
   "author": "Ben Merchant <benjaminmerchant@gmail.com>",
@@ -23,5 +53,9 @@
   "bugs": {
     "url": "https://github.com/benmerchant/benmerchant.dev/issues"
   },
-  "homepage": "https://github.com/benmerchant/benmerchant.dev#readme"
+  "homepage": "https://github.com/benmerchant/benmerchant.dev#readme",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.22",
+    "angular": "^1.7.7"
+  }
 }

@@ -1,3 +1,4 @@
+// 'use strict';
 /*
 * Title: app.component.js
 *
@@ -8,8 +9,14 @@
 
 export const AppComponent = {
   template: `
-    <nav></nav>
-    <div></div>
-    <footer></footer>
+    <nav>
+      Hello Navigation
+    </nav>
+    <div>
+      <div ui-view="mainBody"></div>
+    </div>
+    <footer>
+      &copy 2019 Ben Merchant
+    </footer>
   `
 };
