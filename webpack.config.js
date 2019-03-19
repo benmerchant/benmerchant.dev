@@ -16,16 +16,31 @@ module.exports = {
     app: './src/assets/js/index.js',
     print: './src/assets/js/different.js'
   },
+  mode: 'development',
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Output Management'
+      cache: false,
+      title: 'Learning [html-webpack-plugin]',
+      template: './src/index.html',
+      meta: [
+        {
+          charset: 'utf-8'
+        },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1'
+        },
+        {
+          name: 'description',
+          content: 'Professional website for full stack web developer Ben Merchant.'
+        }
+      ],
+      lang: 'en-US',
+      favicon: './src/assets/imgs/logos/logo_red_knockout.ico'
     }),
-    new MiniCssExtractPlugin({
-      // both options are optional
-      filename: '[name].css',
-      chunkFilename: '[id].css'
-    })
+    // both options are optional
+    new MiniCssExtractPlugin({filename: '[name].css',chunkFilename: '[id].css'})
   ],
   output: {
     filename: '[name].bundle.js',
@@ -33,23 +48,41 @@ module.exports = {
   },
   module: {
     rules: [
+      // { test: /\.handlebars$/, loader: "handlebars-loader" },
       {
         test: /\.css$/,
         use: [
           // 'sass-loader',
           // style-loader in development
           // process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'style-loader',
+          // 'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader'
         ]
       },
-      {
-        test: /\.(png|svg|jpg|gif|ico)$/,
-        use: ['file-loader']
-      }
+      // removed all of these, now title works just fine
+      // {
+      //   test: /\.html$/,
+      //   // DOCS: use 'include' only to apply to loader modules that actually need to be transformed by it
+      //   include: path.resolve(__dirname,'src'),
+      //   use: [ // DOCS: apply multiple loaders and options
+      //     {
+      //       loader: 'html-loader',
+      //       options: { minimize: false}
+      //     },
+      //     {
+      //       loader: 'file-loader',
+      //       options: { name: 'FILE[name].[ext]' }
+      //     }
+      //     // {
+      //     //   loader: 'extract-loader'
+      //     // },
+      //   ]
+      // }
+      // ,
+      // { test: /\.(png|svg|jpg|gif|ico)$/, use: ['file-loader'] }
     ]
   },
-  mode: 'development',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,

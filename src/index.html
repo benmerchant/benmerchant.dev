@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ben Merchant</title>
-    <meta name="description" content="Professional website for full stack web developer Ben Merchant.">
-    <link rel="icon" href="assets/imgs/logos/logo_red_knockout.ico">
-    <!-- <script src="benmerchant.dev.min.js" type="text/javascript"> -->
-    <link rel="stylesheet" href="assets/styles/main.css">
-    </script>
+    <!-- require("html-loader?interpolate=require!./file.ftl"); -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body ng-app="bendev">
     <root>
+      <h1><%= htmlWebpackPlugin.options.title %></h1>
       <span class="loader">Loading...</span>
       <h2>Is this red?</h2>
     </root>
-    <script src="assets/js/bundle.js" type="text/javascript"></script>
   </body>
 </html>
