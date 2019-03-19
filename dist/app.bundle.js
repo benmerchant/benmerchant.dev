@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/assets/styles/vendor/primitive/main.scss":
+/*!******************************************************!*\
+  !*** ./src/assets/styles/vendor/primitive/main.scss ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/styles/vendor/primitive/main.scss?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -94,7 +105,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test.scss */ \"./src/test.scss\");\n/* harmony import */ var _test_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_test_scss__WEBPACK_IMPORTED_MODULE_0__);\n/*\r\n * Title: index.js\r\n *\r\n * Description: trying out web pack\r\n *\r\n * Author: Ben Merchant\r\n*/\n\nconst window = {};\n\nfunction logThis() {\n  console.log('Sass loaded');\n}\n\n;\nlogThis();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test.scss */ \"./src/test.scss\");\n/* harmony import */ var _test_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_test_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_styles_vendor_primitive_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/styles/vendor/primitive/main.scss */ \"./src/assets/styles/vendor/primitive/main.scss\");\n/* harmony import */ var _assets_styles_vendor_primitive_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_styles_vendor_primitive_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n/*\r\n * Title: index.js\r\n *\r\n * Description: trying out web pack\r\n *\r\n * Author: Ben Merchant\r\n*/\n\n\nconst window = {};\n\nfunction logThis() {\n  console.log('Sass loaded');\n}\n\n;\nlogThis();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

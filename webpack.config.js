@@ -22,20 +22,12 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       cache: false,
-      title: 'More [html-webpack-plugin]: SASS',
+      title: 'Primitive is bundling just fine!',
       template: './src/index.html',
       meta: [
-        {
-          charset: 'utf-8'
-        },
-        {
-          name: 'viewport',
-          content: 'width=device-width, initial-scale=1'
-        },
-        {
-          name: 'description',
-          content: 'Professional website for full stack web developer Ben Merchant.'
-        }
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Professional website for full stack web developer Ben Merchant.' }
       ],
       lang: 'en-US',
       favicon: './src/assets/imgs/logos/logo_red_knockout.ico'
