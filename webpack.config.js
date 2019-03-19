@@ -38,6 +38,10 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
+        include: [
+          path.resolve(__dirname,'./src/assets/styles/vendor/primitive/main.scss'),
+          path.resolve(__dirname,'./src/assets/styles/main.scss')
+        ],
         use:
           [
             // This plugin should be used only on production builds without style-loader in the loaders chain, especially if you want to have HMR in development.

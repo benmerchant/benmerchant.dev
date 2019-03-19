@@ -5,8 +5,8 @@
  *
  * Author: Ben Merchant
 */
-import styles from './test.scss';
 import primitive from './assets/styles/vendor/primitive/main.scss';
+import styles from './assets/styles/main.scss';
 
 const window = {};
 
