@@ -6,26 +6,35 @@
  *
  * Author: Ben Merchant
 */
-console.log('MainController');
+console.log('main.component');
 
 class MainController {
   constructor(MainConfig, $state){
     this.emailAddress = MainConfig.emailAddress;
     this.$state = $state;
-  }
+  };
+  $onInit() {
+    this.name = 'Ben Merchant';
+  };
 };
 MainController.$inject = ['MainConfig','$state'];
 
 // main app component
 export const main = {
   controller: MainController,
+  bindings: {name: '@'},
   template: `
-    <nav><h1>Navigation</h1></nav>
+    <nav>
+      <h1>Navigation</h1>
+      <h3>{{$ctrl.name}}</h3>
+    </nav>
     <main>
       <h1>Main Body</h1>
-      <a ui-sref="welcome" ui-sref-active="active" ui-sref='welcome'>Welcome</a>
-      <a ui-sref="about" ui-sref-active="active" ui-sref='about'>About</a>
-      <ui-view></ui-view>
+      <a ui-sref='welcome' ui-sref-active='active' ui-sref='welcome'>Welcome</a>
+      <a ui-sref='about' ui-sref-active='active' ui-sref='about'>About</a>
+
+      <div ui-view='welcome'></div>
+      <div ui-view='about'></div>
     </main>
     <footer><h1>Footer</h1></footer>
   `

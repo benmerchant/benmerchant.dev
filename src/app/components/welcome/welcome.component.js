@@ -1,3 +1,4 @@
+console.log('welcome.component');
 export const welcome = {
   template: `
   <div class='main-container'>

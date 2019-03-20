@@ -23,3 +23,10 @@ export const welcomeState = {
   url: '/welcome',
   component: 'welcome'
 };
+
+export const aboutState = {
+  parent: 'main',
+  name: 'about',
+  url: '/about',
+  component: 'about'
+};

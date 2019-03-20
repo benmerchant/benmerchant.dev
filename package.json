@@ -39,6 +39,12 @@
     "angularjs"
   ],
   "author": "Ben Merchant <benjaminmerchant@gmail.com>",
+  "contributors": [
+    {
+      "name": "Ben Merchant",
+      "web": "https://github.com/benmerchant"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/benmerchant/benmerchant.dev/issues"
@@ -46,6 +52,9 @@
   "homepage": "https://github.com/benmerchant/benmerchant.dev#readme",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.22",
+    "@uirouter/dsr": "^1.1.0",
+    "@uirouter/sticky-states": "^1.5.0",
+    "@uirouter/visualizer": "^7.0.0",
     "angular": "^1.7.7",
     "oclazyload": "^1.1.0"
   }
