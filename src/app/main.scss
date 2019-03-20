@@ -1,4 +1,11 @@
 /* https://ui-router.github.io/ng1/tutorial/helloworld#active-link */
+// state based class to indicate which state is currently active
 .active {
   background-color: red; font-weight: bolder;
+}
+// border the three main areas to help delineation
+div#the-container nav,
+div#the-container main,
+div#the-container footer {
+  border: 1rem ridge lightblue;
 }

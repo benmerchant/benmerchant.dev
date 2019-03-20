@@ -55,15 +55,22 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   $urlService.rules.otherwise({state:'welcome'});
 
   const $stateRegistry = $uiRouter.stateRegistry;
+
   $stateRegistry.register(mainState);
   $stateRegistry.register(welcomeState);
   $stateRegistry.register(aboutState);
+  console.log($stateRegistry);
 
   // register these plugins to our main module
   $uiRouter.plugin(StickyStatesPlugin);
-  // $uiRouter.plugin(DSRPlugin);
-  // // show ui-router visualizer
+  $uiRouter.plugin(DSRPlugin);
+  // show ui-router visualizer
+
+////////// TURN VISUALIZER BACK ON //////////////
+
   // visualizer($uiRouter);
+
+/////////////////////////////////////////////////
 }]);
 
 // place this somewhere else. like a service module or something

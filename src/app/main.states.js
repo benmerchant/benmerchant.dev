@@ -15,6 +15,12 @@ export const mainState = {
   redirectTo: 'welcome',
   component: 'main'
 };
+////// TODO: switch to an actual home page
+// export const mainState = {
+//   name: 'main',
+//   url: '/',
+//   component: 'main'
+// };
 
 // default state: 'welcome' - 404
 export const welcomeState = {

@@ -639,3 +639,8 @@ caption {
   background-color: red;
   font-weight: bolder; }
 
+div#the-container nav,
+div#the-container main,
+div#the-container footer {
+  border: 1rem ridge lightblue; }
+
