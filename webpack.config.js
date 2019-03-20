@@ -12,25 +12,26 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: { app: path.join(__dirname, 'src/index.js') },
+  entry: { app: path.join(__dirname, 'src/app/main.module.js') },
   mode: 'development',
+  devtool: 'eval',
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       cache: false,
-      title: 'Primitive is bundling just fine!',
-      template: './src/index.html',
+      title: 'Ben Merchant dot Dev',
+      template: path.join(__dirname, 'src/app/index.html'),
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Professional website for full stack web developer Ben Merchant.' }
       ],
       lang: 'en-US',
-      favicon: './src/assets/imgs/logos/logo_red_knockout.ico'
+      favicon: path.resolve(__dirname, 'src/app/assets/imgs/logos/logo_red_knockout.ico')
     }),
     new MiniCssExtractPlugin({filename: '[name].css',chunkFilename: '[id].css'})
   ],
@@ -38,10 +39,10 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        include: [
-          path.resolve(__dirname,'./src/assets/styles/vendor/primitive/main.scss'),
-          path.resolve(__dirname,'./src/assets/styles/main.scss')
-        ],
+        // include: [
+        //   path.resolve(__dirname,'src/app/assets/styles/vendor/primitive/main.scss'),
+        //   path.resolve(__dirname,'src/assets/main.scss')
+        // ],
         use:
           [
             // This plugin should be used only on production builds without style-loader in the loaders chain, especially if you want to have HMR in development.
