@@ -12,12 +12,12 @@
 // put vendor libraries in a different folder
 import * as angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
-import { StickyStatesPlugin } from '@uirouter/sticky-states';
-import { DSRPlugin } from '@uirouter/dsr';
+// import { StickyStatesPlugin } from '@uirouter/sticky-states';
+// import { DSRPlugin } from '@uirouter/dsr';
 import { visualizer } from '@uirouter/visualizer';
-import ocLazyLoad from 'oclazyload';
+// import ocLazyLoad from 'oclazyload';
 
-import { main } from './main.component';
+import { vegeta } from './main.component';
 import { home } from './components/home/home.component';
 import { about } from './components/about/about.component';
 // import { ComponentsModule } from './components/components.module';
@@ -34,8 +34,9 @@ import {mainState,homeState,aboutState} from  './main.states';
 
 console.log('MAIN - module definition');
 export const BEN_DEV_MAIN = angular.module('bendev',[
-  uiRouter,
-  ocLazyLoad
+  uiRouter
+  // ,
+  // ocLazyLoad
 ]);
 
 BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
@@ -64,7 +65,7 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 
 ////////// TURN VISUALIZER BACK ON //////////////
 
-  // visualizer($uiRouter);
+  visualizer($uiRouter);
 
 /////////////////////////////////////////////////
 }]);
@@ -72,6 +73,6 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 // place this somewhere else. like a service module or something
 // BEN_DEV_MAIN.service('MainConfig', MainConfig);
 
-BEN_DEV_MAIN.component('bendev',main);
+BEN_DEV_MAIN.component('bendev',vegeta);
 BEN_DEV_MAIN.component('home',home);
 BEN_DEV_MAIN.component('about',about);

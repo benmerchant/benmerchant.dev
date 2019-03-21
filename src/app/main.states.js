@@ -13,28 +13,28 @@ import {aboutTemplate, aboutController} from './components/about/about.component
 import {blogTemplate, blogController} from './components/blog/blog.component';
 
 export const mainState = {
-  name: 'main',
+  name: 'goku',
   redirectTo: 'home',
   component: 'main'
 };
 
 // default state: 'home' - 404
 export const homeState = {
-  parent: 'main',
+  parent: 'goku',
   name: 'home',
   url: '/home',
   component: 'home'
 };
 
 export const aboutState = {
-  parent: 'main',
+  parent: 'goku',
   name: 'about',
   url: '/about',
   component: 'about'
 };
 
 export const blogState = {
-  parent: 'main',
+  parent: 'goku',
   name: 'blog',
   url: '/blog',
   component: 'blog'

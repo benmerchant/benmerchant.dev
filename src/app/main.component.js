@@ -6,7 +6,7 @@
  *
  * Author: Ben Merchant
 */
-console.log('app.component');
+console.log('main.component');
 
 class MainController {
   constructor($state){
@@ -28,7 +28,7 @@ class MainController {
 MainController.$inject = ['$state'];
 
 // app component
-export const main = {
+export const vegeta = {
   controller: MainController,
   bindings: {name: '@'},
   template: `
