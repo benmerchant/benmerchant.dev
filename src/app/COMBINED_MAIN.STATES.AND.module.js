@@ -80,18 +80,28 @@ const vegeta = {
 ////////////////////import {aboutTemplate, aboutController} from './components/about/about.component';
 ////////////////////import {blogTemplate, blogController} from './components/blog/blog.component';
 
-const mainState = {
-  name: 'goku',
-  redirectTo: 'home',
-  component: 'vegeta'
-};
+// const mainState = {
+//   name: 'goku',
+//   redirectTo: 'home',
+//   component: 'vegeta'
+// };
 
+//// only State for now!!!!
+const theOnlyState = {
+  name: 'theOnly',
+  url: '/',
+  template: `
+    <h1>IS THIS STATE WORKING????</h1>
+    <ui-view><ui-view>
+  `
+};
 // default state: 'home' - 404
 const homeState = {
-  parent: 'goku',
+  parent: 'theOnly',
   name: 'home',
   url: '/home',
-  component: 'home'
+  // component: 'home',
+  template: '<h3>This is the home Template</h3>'
 };
 
 // const aboutState = {
@@ -108,12 +118,7 @@ const homeState = {
 //   component: 'blog'
 // };
 
-//// only State for now!!!!
-const theOnlyState = {
-  name: 'theOnly',
-  url: '/',
-  template: '<h1>IS THIS STATE WORKING????</h1>'
-};
+
 
 console.log('MAIN - module definition');
 export const BEN_DEV_MAIN = angular.module('bendev',[
@@ -132,12 +137,13 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 
   // basically a 404
   const $urlService = $uiRouter.urlService;
-  // $urlService.rules.otherwise({state:'home'});
+  $urlService.rules.otherwise({state:'home'});
 
   const $stateRegistry = $uiRouter.stateRegistry;
 
 
   $stateRegistry.register(theOnlyState);
+  $stateRegistry.register(homeState);
 
 
 
@@ -150,7 +156,7 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 
 
   // $stateRegistry.register(mainState);
-  // $stateRegistry.register(homeState);
+
   // $stateRegistry.register(aboutState);
   console.log($stateRegistry);
 
