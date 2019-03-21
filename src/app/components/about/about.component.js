@@ -9,6 +9,6 @@ export const about = {
       <li>Recent College Grad</li>
     </ul>
 
-  </div> # end .about-container
+  </div> <!-- # end .about-container -->
   `
 };

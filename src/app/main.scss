@@ -4,8 +4,12 @@
   background-color: red; font-weight: bolder;
 }
 // border the three main areas to help delineation
-div#the-container nav,
-div#the-container main,
-div#the-container footer {
+div#the-container nav {
+  border: 1rem ridge red;
+}
+div#the-container div#big-div {
   border: 1rem ridge lightblue;
+}
+div#the-container footer {
+  border: 1rem ridge grey;
 }

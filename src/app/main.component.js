@@ -40,8 +40,11 @@ export const main = {
         <br>
         <a ui-sref='home' ui-sref-active='active' ui-sref='home'>home</a>
         <a ui-sref='about' ui-sref-active='active' ui-sref='about'>About</a>
+        <button ui-sref='home' ui-sref-active='Home'>Home</button>
+        <button ui-sref='about' ui-sref-active='About'>About</button>
+        <button ui-sref='blog' ui-sref-active='Blog'>Blog</button>
       </nav>
-      <div id=big-div>
+      <div id='big-div'>
         <h1>Main Body</h1>
 
         <div ui-view></div>
