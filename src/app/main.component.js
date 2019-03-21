@@ -38,8 +38,6 @@ export const main = {
         <h3>{{$ctrl.name}}</h3>
         <button ng-click="$ctrl.togglePhrase()">Toggle Phrase!</button>
         <br>
-        <a ui-sref='home' ui-sref-active='active' ui-sref='home'>home</a>
-        <a ui-sref='about' ui-sref-active='active' ui-sref='about'>About</a>
         <button ui-sref='home' ui-sref-active='Home'>Home</button>
         <button ui-sref='about' ui-sref-active='About'>About</button>
         <button ui-sref='blog' ui-sref-active='Blog'>Blog</button>
@@ -49,10 +47,13 @@ export const main = {
 
         <div ui-view></div>
         <div ui-view='home' ng-show='$ctrl.isActive("home.**")'>
-          home state div - (hardcoded)
+          home state div - (hardcoded in main.component)
         </div>
         <div ui-view='about' ng-show='$ctrl.isActive("about.**")'>
-          About state div - (hardcoded)
+          About state div - (hardcoded in main.component)
+        </div>
+        <div ui-view='blog' ng-show='$ctrl.isActive("blog.**")'>
+          blog state div - (hardcoded in main.component)
         </div>
       </div>
       <footer><h1>Footer</h1></footer>

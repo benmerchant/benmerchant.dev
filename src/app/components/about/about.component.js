@@ -8,7 +8,6 @@ export const about = {
       <li>Full Stack JavaScript Developer</li>
       <li>Recent College Grad</li>
     </ul>
-
   </div> <!-- # end .about-container -->
   `
 };
