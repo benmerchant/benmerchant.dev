@@ -24,7 +24,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       cache: false,
       title: 'Ben Merchant dot Dev',
-      template: path.join(__dirname, 'src/app/index.html'),
+      template: path.join(__dirname, 'src/index.html'),
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
