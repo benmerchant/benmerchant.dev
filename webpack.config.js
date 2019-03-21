@@ -1,5 +1,5 @@
 /*
- * Title: webpack.config.js
+ * Title: ~/webpack.config.js
  *
  * Description: config file for webpack bundling
  *
@@ -12,7 +12,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: { app: path.join(__dirname, 'src/app/main.module.js') },
+  // just switched to this...
+  // trying to find perfect directory structure
+  entry: { app: path.join(__dirname, 'src/app/index.js') },
   mode: 'development',
   devtool: 'eval',
   output: {
@@ -24,7 +26,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       cache: false,
       title: 'Ben Merchant dot Dev',
-      template: path.join(__dirname, 'src/app/index.html'),
+      // changed index.html location
+      template: path.join(__dirname, 'src/index.html'),
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -6,15 +6,17 @@
  *
  * Author: Ben Merchant
 */
-'use strict';
 
 
-// put vendor libraries in a different folder
-import * as angular from 'angular';
-import uiRouter from '@uirouter/angularjs';
+
+//// still havent used these 2
 import { StickyStatesPlugin } from '@uirouter/sticky-states';
 import { DSRPlugin } from '@uirouter/dsr';
+
+/// good for dev
 import { visualizer } from '@uirouter/visualizer';
+
+//// nor this one
 import ocLazyLoad from 'oclazyload';
 
 import { main } from './main.component';
@@ -33,11 +35,6 @@ import {mainState,homeState,aboutState,blogState} from  './main.states';
 
 
 
-console.log('MAIN - module definition');
-export const BEN_DEV_MAIN = angular.module('bendev',[
-  uiRouter,
-  ocLazyLoad
-]);
 
 BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   console.log('MAIN - config');
