@@ -9,18 +9,14 @@
 */
 import {mainTemplate, mainController} from './main.component';
 import {homeTemplate, homeController} from './components/home/home.component';
+import {aboutTemplate, aboutController} from './components/about/about.component';
+import {blogTemplate, blogController} from './components/blog/blog.component';
 
 export const mainState = {
   name: 'main',
   redirectTo: 'home',
   component: 'main'
 };
-////// TODO: switch to an actual home page
-// export const mainState = {
-//   name: 'main',
-//   url: '/',
-//   component: 'main'
-// };
 
 // default state: 'home' - 404
 export const homeState = {
@@ -35,4 +31,11 @@ export const aboutState = {
   name: 'about',
   url: '/about',
   component: 'about'
+};
+
+export const blogState = {
+  parent: 'main',
+  name: 'blog',
+  url: '/blog',
+  component: 'blog'
 };

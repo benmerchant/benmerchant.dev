@@ -28,7 +28,7 @@ import styles from './main.scss';
 import {mainState,homeState,aboutState} from  './main.states';
 
 // this needs to go somewhere else
-import {MainConfig} from './mainConfig.service';
+// import {MainConfig} from './mainConfig.service';
 
 
 
@@ -58,19 +58,19 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   console.log($stateRegistry);
 
   // register these plugins to our main module
-  $uiRouter.plugin(StickyStatesPlugin);
-  $uiRouter.plugin(DSRPlugin);
+  ///////////////////////////$uiRouter.plugin(StickyStatesPlugin);
+  ///////////////////////////$uiRouter.plugin(DSRPlugin);
   // show ui-router visualizer
 
 ////////// TURN VISUALIZER BACK ON //////////////
 
-  visualizer($uiRouter);
+  // visualizer($uiRouter);
 
 /////////////////////////////////////////////////
 }]);
 
 // place this somewhere else. like a service module or something
-BEN_DEV_MAIN.service('MainConfig', MainConfig);
+// BEN_DEV_MAIN.service('MainConfig', MainConfig);
 
 BEN_DEV_MAIN.component('bendev',main);
 BEN_DEV_MAIN.component('home',home);

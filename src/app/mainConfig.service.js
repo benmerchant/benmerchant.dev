@@ -15,3 +15,4 @@ export class MainConfig {
       this.emailAddress = undefined;
   }
 };
+// commenting out all references to this file for now. Not doing anything
