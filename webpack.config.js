@@ -12,7 +12,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: { app: path.join(__dirname, 'src/app/main.module.js') },
+  entry: { app: path.join(__dirname, 'src/app/mainLANDO.module.js') },
   mode: 'development',
   devtool: 'eval',
   output: {
