@@ -41,18 +41,18 @@ class MainController {
   };
 };
 MainController.$inject = ['$state'];
+
 const vegeta = {
   controller: MainController,
   bindings: {name: '@'},
   template: `
-    <h1>IS THIS STATE WORKING????</h1>
-    <hr>
-    <h1>home to my site!</h1>
-    <button ui-sref='blog'>Home</button>
-    <button ui-sref='about'>About</button>
-    <button ui-sref='blog'>Blog</button>
-    <hr>
-    <ui-view><ui-view>
+    <h1>Top State, Contain Entire Page!</h1>
+    <a ui-sref='home' ui-sref-active='active' ui-sref='home'>home</a>
+    <a ui-sref='about' ui-sref-active='active' ui-sref='about'>About</a>
+    <a ui-sref='blog' ui-sref-active='active' ui-sref='blog'>Blog</a>
+    <div style='border: 1rem solid blue;'>
+      <ui-view><ui-view>
+    </div>
   `
 };
 
@@ -64,16 +64,17 @@ const topState = {
   name: 'top',
   url: '/top',
   redirectTo: 'home',
-  controller: MainController,
-  template: `
-    <h1>Top State, Contain Entire Page!</h1>
-    <a ui-sref='home' ui-sref-active='active' ui-sref='home'>home</a>
-    <a ui-sref='about' ui-sref-active='active' ui-sref='about'>About</a>
-    <a ui-sref='blog' ui-sref-active='active' ui-sref='blog'>Blog</a>
-    <div style='border: 1rem solid blue;'>
-      <ui-view><ui-view>
-    </div>
-  `
+  // controller: MainController,
+  // template: `
+  //   <h1>Top State, Contain Entire Page!</h1>
+  //   <a ui-sref='home' ui-sref-active='active' ui-sref='home'>home</a>
+  //   <a ui-sref='about' ui-sref-active='active' ui-sref='about'>About</a>
+  //   <a ui-sref='blog' ui-sref-active='active' ui-sref='blog'>Blog</a>
+  //   <div style='border: 1rem solid blue;'>
+  //     <ui-view><ui-view>
+  //   </div>
+  // `
+  component: 'vegeta'
 };
 // default state: 'home' - 404
 const homeState = {
@@ -125,3 +126,5 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 
 /////////////////////////////////////////////////
 }]);
+
+BEN_DEV_MAIN.component('vegeta',vegeta);
