@@ -72,6 +72,6 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 // place this somewhere else. like a service module or something
 // BEN_DEV_MAIN.service('MainConfig', MainConfig);
 
-BEN_DEV_MAIN.component('bendev',main);
+BEN_DEV_MAIN.component('main',main);
 BEN_DEV_MAIN.component('home',home);
 BEN_DEV_MAIN.component('about',about);
