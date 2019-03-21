@@ -1,4 +1,4 @@
-# Ben MErchant dot dev
+# Ben Merchant dot dev
 *My professional portfolio*
 
 
