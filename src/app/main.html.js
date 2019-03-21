@@ -1,12 +1,10 @@
-
 // import image to place in html
 import logoLightBlueImported from './assets/imgs/logos/logo_lightblue_knockout.png';
 
 const logoLightBlueElement = new Image();
 logoLightBlueElement.src = logoLightBlueImported;
 
-export const mainTemplate =
-`
+export const mainTemplate = `
   <div id="the-container">
     <nav>
       <div width='33%'>
@@ -17,6 +15,7 @@ export const mainTemplate =
       <button ng-click="$ctrl.togglePhrase()">Toggle Phrase!</button>
       <br>
       <button ui-sref='home' ui-sref-active='Home'>Home</button>
+      <button ui-sref='projects' ui-sref-active='Projects'>Projects</button>
       <button ui-sref='about' ui-sref-active='About'>About</button>
       <button ui-sref='blog' ui-sref-active='Blog'>Blog</button>
     </nav>
@@ -26,6 +25,9 @@ export const mainTemplate =
       <div ui-view></div>
       <div ui-view='home' ng-show='$ctrl.isActive("home.**")'>
         home state div - (hardcoded in main.component)
+      </div>
+      <div ui-view='projects' ng-show='$ctrl.isActive("projects.**")'>
+        Projects state div - (hardcoded in main.component)
       </div>
       <div ui-view='about' ng-show='$ctrl.isActive("about.**")'>
         About state div - (hardcoded in main.component)

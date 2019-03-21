@@ -34,5 +34,5 @@ MainController.$inject = ['$state'];
 export const main = {
   controller: MainController,
   bindings: {name: '@'},
-  template:mainTemplate
+  template: mainTemplate
 };

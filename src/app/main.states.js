@@ -11,6 +11,7 @@ import {mainTemplate, mainController} from './main.component';
 import {homeTemplate, homeController} from './components/home/home.component';
 import {aboutTemplate, aboutController} from './components/about/about.component';
 import {blogTemplate, blogController} from './components/blog/blog.component';
+import {projectsTemplate, projectsController} from './components/projects/projects.component';
 
 export const mainState = {
   name: 'main',
@@ -38,4 +39,11 @@ export const blogState = {
   name: 'blog',
   url: '/blog',
   component: 'blog'
+};
+
+export const projectsState = {
+  parent: 'main',
+  name: 'projects',
+  url: '/projects',
+  component: 'projects'
 };
