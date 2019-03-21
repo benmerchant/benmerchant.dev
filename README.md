@@ -15,7 +15,8 @@ In a previous project, I had used AngularJS. That was my capstone course for gra
 
 Enough about Start POS.
 
-#### Where are we on [benmerchant.dev](benmerchant.dev)?
+#### Where are we on [benmerchant.dev](www.benmerchant.dev)? 
+*note: as of right now, working on iPhone but not desktop. Likely slow DNS issue I had with Start POS last year*
 
 1. The basic skeleton is laid out
 1. Concerns are pretty much separated
