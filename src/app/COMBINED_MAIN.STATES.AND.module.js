@@ -1,8 +1,17 @@
 // 'use strict';
 /*
-* Title: app.module.js
+* Title: src\app\COMBINED_MAIN.STATES.AND.module.js
 *
 * Description: root/app level module for the site
+
+
+  Bastardized version of this file. In the 01_refactorIndexMain branch
+  Trying to find out why
+
+  A. I'm getting an injector error regarding 'mainDirectiveProvider'
+  B. when i attempted (in master branch) to change all instances of the word
+      'main' to 'app' it switched to 'appDirectiveProvider' error.
+      But, I couldn't figure out what actually triggered that!!!
  *
  * Author: Ben Merchant
 */
@@ -12,26 +21,12 @@
 // put vendor libraries in a different folder
 import * as angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
-// import { StickyStatesPlugin } from '@uirouter/sticky-states';
-// import { DSRPlugin } from '@uirouter/dsr';
 import { visualizer } from '@uirouter/visualizer';
-// import ocLazyLoad from 'oclazyload';
-
-// import { vegeta } from './main.component';
-////////////////////import { home } from './components/home/home.component';
-////////////////////import { about } from './components/about/about.component';
-// import { ComponentsModule } from './components/components.module';
-// import { SharedModule } from './shared/shared.module';
 import primitive from './assets/styles/vendor/primitive/main.scss';
 import styles from './main.scss';
 
-///// commented out for combined STATES AND MODULE test
-// import {mainState,homeState,aboutState} from  './main.states';
-
-// import {mainTemplate, mainController} from './main.component';
 class MainController {
   constructor($state){
-    // this.emailAddress = MainConfig.emailAddress;
     this.$state = $state;
     this.name = 'Ben Merchant';
     this.phrase = 'Howdy!';
@@ -45,55 +40,28 @@ class MainController {
    return this.$state.includes(glob);
   };
 };
-// MainController.$inject = ['MainConfig','$state'];
 MainController.$inject = ['$state'];
 
 const vegeta = {
   controller: MainController,
   bindings: {name: '@'},
   template: `
-    <div id="the-container">
-      <nav>
-        <h1>Navigation - {{$ctrl.phrase}}</h1>
-        <h3>{{$ctrl.name}}</h3>
-        <button ng-click="$ctrl.togglePhrase()">Toggle Phrase!</button>
-        <br>
-        <a ui-sref='home' ui-sref-active='active' ui-sref='home'>home</a>
-        <a ui-sref='about' ui-sref-active='active' ui-sref='about'>About</a>
-      </nav>
-      <div id=big-div>
-        <h1>Main Body</h1>
-
-        <div ui-view></div>
-        <div ui-view='home' ng-show='$ctrl.isActive("home.**")'>
-          home state div - (hardcoded)
-        </div>
-        <div ui-view='about' ng-show='$ctrl.isActive("about.**")'>
-          About state div - (hardcoded)
-        </div>
-      </div>
-      <footer><h1>Footer</h1></footer>
-    </div>
+    <h1>IS THIS STATE WORKING????</h1>
+    <ui-view><ui-view>
   `
 };
-////////////////////import {homeTemplate, homeController} from './components/home/home.component';
-////////////////////import {aboutTemplate, aboutController} from './components/about/about.component';
-////////////////////import {blogTemplate, blogController} from './components/blog/blog.component';
-
-// const mainState = {
-//   name: 'goku',
-//   redirectTo: 'home',
-//   component: 'vegeta'
-// };
 
 //// only State for now!!!!
 const theOnlyState = {
   name: 'theOnly',
   url: '/hadToGiveThisSomeNameBecauseDoubleSlashesFail',
+  // component: 'vegeta',
+  controller: MainController,
   template: `
     <h1>IS THIS STATE WORKING????</h1>
     <ui-view><ui-view>
-  `
+  `,
+  redirectTo: 'home'
 };
 // default state: 'home' - 404
 const homeState = {
