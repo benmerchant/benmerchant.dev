@@ -16,12 +16,7 @@ class MainController {
     // this.emailAddress = MainConfig.emailAddress;
     this.$state = $state;
     this.name = 'Ben Merchant';
-    this.phrase = 'Howdy!';
-
-    // fun toggler to test functionality
-    this.togglePhrase = function() {
-        this.phrase = (this.phrase == 'Howdy!') ? 'JavaScript is fun!' : 'Howdy!'
-    };
+    
   };
   isActive(glob) {
    return this.$state.includes(glob);

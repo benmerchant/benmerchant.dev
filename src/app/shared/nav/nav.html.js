@@ -14,8 +14,6 @@ export const navTemplate = `
     <button ui-sref='projects' ui-sref-active='Projects'>Projects</button>
     <button ui-sref='about' ui-sref-active='About'>About</button>
     <button ui-sref='blog' ui-sref-active='Blog'>Blog</button>
-    <h3>{{$ctrl.name}}</h3>
-    <button ng-click="$ctrl.togglePhrase()">Toggle Phrase!</button>
   </div>
 
 
