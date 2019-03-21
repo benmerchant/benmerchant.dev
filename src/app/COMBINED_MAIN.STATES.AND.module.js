@@ -89,7 +89,7 @@ const vegeta = {
 //// only State for now!!!!
 const theOnlyState = {
   name: 'theOnly',
-  url: '/',
+  url: '/hadToGiveThisSomeNameBecauseDoubleSlashesFail',
   template: `
     <h1>IS THIS STATE WORKING????</h1>
     <ui-view><ui-view>
