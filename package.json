@@ -1,6 +1,6 @@
 {
   "name": "benmerchant.dev",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Professional website for full stack web developer Ben Merchant.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
