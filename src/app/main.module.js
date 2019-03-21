@@ -12,24 +12,20 @@
 // put vendor libraries in a different folder
 import * as angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
-// misguided attempt to grap the modules the hard way....
-// import {StickyStatesPlugin} from './node_modules/@uirouter/core/_bundles/ui-router-core/sticky-states';
-// import {DSRPlugin} from './node_modules/@uirouter/core/_bundles/ui-router-core/dsrplugin';
-// import { StickyStatesPlugin,DSRPlugin,visualizer } from '../../node_modules/@uirouter/core/_bundles/ui-router-core.js';
 import { StickyStatesPlugin } from '@uirouter/sticky-states';
 import { DSRPlugin } from '@uirouter/dsr';
 import { visualizer } from '@uirouter/visualizer';
 import ocLazyLoad from 'oclazyload';
 
 import { main } from './main.component';
-import { welcome } from './components/welcome/welcome.component';
+import { home } from './components/home/home.component';
 import { about } from './components/about/about.component';
 // import { ComponentsModule } from './components/components.module';
 // import { SharedModule } from './shared/shared.module';
 import primitive from './assets/styles/vendor/primitive/main.scss';
 import styles from './main.scss';
 
-import {mainState,welcomeState,aboutState} from  './main.states';
+import {mainState,homeState,aboutState} from  './main.states';
 
 // this needs to go somewhere else
 import {MainConfig} from './mainConfig.service';
@@ -52,12 +48,12 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 
   // basically a 404
   const $urlService = $uiRouter.urlService;
-  $urlService.rules.otherwise({state:'welcome'});
+  $urlService.rules.otherwise({state:'home'});
 
   const $stateRegistry = $uiRouter.stateRegistry;
 
   $stateRegistry.register(mainState);
-  $stateRegistry.register(welcomeState);
+  $stateRegistry.register(homeState);
   $stateRegistry.register(aboutState);
   console.log($stateRegistry);
 
@@ -68,7 +64,7 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 
 ////////// TURN VISUALIZER BACK ON //////////////
 
-  // visualizer($uiRouter);
+  visualizer($uiRouter);
 
 /////////////////////////////////////////////////
 }]);
@@ -77,5 +73,5 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 BEN_DEV_MAIN.service('MainConfig', MainConfig);
 
 BEN_DEV_MAIN.component('bendev',main);
-BEN_DEV_MAIN.component('welcome',welcome);
+BEN_DEV_MAIN.component('home',home);
 BEN_DEV_MAIN.component('about',about);

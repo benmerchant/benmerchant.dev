@@ -6,6 +6,8 @@
  * Author: Ben Merchant
 */
 
+// gather all components here
+
 angular
   .module('components', [
     'components.admin',

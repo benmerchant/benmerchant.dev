@@ -53,11 +53,15 @@ export const main = {
       </nav>
       <main>
         <h1>Main Body</h1>
-        <a ui-sref='welcome' ui-sref-active='active' ui-sref='welcome'>Welcome</a>
+        <a ui-sref='home' ui-sref-active='active' ui-sref='home'>home</a>
         <a ui-sref='about' ui-sref-active='active' ui-sref='about'>About</a>
 
-        <div ui-view='welcome' ng-show='$ctrl.isActive("welcome.**")'></div>
-        <div ui-view='about' ng-show='$ctrl.isActive("about.**")'></div>
+        <div ui-view='home' ng-show='$ctrl.isActive("home.**")'>
+          home state div - (hardcoded)
+        </div>
+        <div ui-view='about' ng-show='$ctrl.isActive("about.**")'>
+          About state div - (hardcoded)
+        </div>
       </main>
       <footer><h1>Footer</h1></footer>
     </div>
