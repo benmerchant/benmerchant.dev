@@ -108,6 +108,13 @@ const homeState = {
 //   component: 'blog'
 // };
 
+//// only State for now!!!!
+const theOnlyState = {
+  name: 'theOnly',
+  url: '/',
+  template: '<h1>IS THIS STATE WORKING????</h1>'
+};
+
 console.log('MAIN - module definition');
 export const BEN_DEV_MAIN = angular.module('bendev',[
   uiRouter
@@ -125,12 +132,25 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 
   // basically a 404
   const $urlService = $uiRouter.urlService;
-  $urlService.rules.otherwise({state:'home'});
+  // $urlService.rules.otherwise({state:'home'});
 
   const $stateRegistry = $uiRouter.stateRegistry;
 
-  $stateRegistry.register(mainState);
-  $stateRegistry.register(homeState);
+
+  $stateRegistry.register(theOnlyState);
+
+
+
+
+
+
+
+
+
+
+
+  // $stateRegistry.register(mainState);
+  // $stateRegistry.register(homeState);
   // $stateRegistry.register(aboutState);
   console.log($stateRegistry);
 
@@ -149,6 +169,6 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 // place this somewhere else. like a service module or something
 // BEN_DEV_MAIN.service('MainConfig', MainConfig);
 
-BEN_DEV_MAIN.component('bendev',vegeta);
-BEN_DEV_MAIN.component('home',home);
+// BEN_DEV_MAIN.component('bendev',vegeta);
+// BEN_DEV_MAIN.component('home',home);
 // BEN_DEV_MAIN.component('about',about);
