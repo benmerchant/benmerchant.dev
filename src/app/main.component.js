@@ -6,7 +6,14 @@
  *
  * Author: Ben Merchant
 */
-console.log('app.component');
+// import image to place in html
+import logoLightBlueImported from './assets/imgs/logos/logo_lightblue_knockout.png';
+
+const logoLightBlueElement = new Image();
+logoLightBlueElement.src = logoLightBlueImported;
+
+
+console.log('main.component');
 
 class MainController {
   constructor($state){
@@ -34,6 +41,9 @@ export const main = {
   template: `
     <div id="the-container">
       <nav>
+        <div width='33%'>
+          <img src='${logoLightBlueImported}' width='100' />
+        </div>
         <h1>Navigation - {{$ctrl.phrase}}</h1>
         <h3>{{$ctrl.name}}</h3>
         <button ng-click="$ctrl.togglePhrase()">Toggle Phrase!</button>
