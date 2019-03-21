@@ -1429,7 +1429,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"navTemplate\", function() { return navTemplate; });\n/* harmony import */ var _assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/imgs/logos/logo_lightblue_knockout.png */ \"./src/app/assets/imgs/logos/logo_lightblue_knockout.png\");\n/* harmony import */ var _assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0__);\n// import image to place in html\n\nconst logoLightBlueElement = new Image();\nlogoLightBlueElement.src = _assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0___default.a;\nconst navTemplate = `\n<nav class=\"flex-row\">\n  <div class=\"flex-small\">\n    <img src='${_assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0___default.a}' width='100' />\n  </div>\n  <div class=\"flex-small\">\n    <button ui-sref='home' ui-sref-active='Home'>Home</button>\n    <button ui-sref='projects' ui-sref-active='Projects'>Projects</button>\n    <button ui-sref='about' ui-sref-active='About'>About</button>\n    <button ui-sref='blog' ui-sref-active='Blog'>Blog</button>\n  </div>\n\n\n  <br>\n\n</nav>\n`;\n\n//# sourceURL=webpack:///./src/app/shared/nav/nav.html.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"navTemplate\", function() { return navTemplate; });\n/* harmony import */ var _assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/imgs/logos/logo_lightblue_knockout.png */ \"./src/app/assets/imgs/logos/logo_lightblue_knockout.png\");\n/* harmony import */ var _assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _nav_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav.scss */ \"./src/app/shared/nav/nav.scss\");\n/* harmony import */ var _nav_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_nav_scss__WEBPACK_IMPORTED_MODULE_1__);\n// import image to place in html\n\n\nconst logoLightBlueElement = new Image();\nlogoLightBlueElement.src = _assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0___default.a;\nconst navTemplate = `\n<nav class=\"flex-row\">\n\n\n  <div class=\"flex-small\">\n    <img src='${_assets_imgs_logos_logo_lightblue_knockout_png__WEBPACK_IMPORTED_MODULE_0___default.a}' width='100' />\n  </div>\n\n\n  <div class=\"flex-small flex-row vertical-center just-even\" >\n      <button class=\"round-button\" ui-sref='home' ui-sref-active='Home'>Home</button>\n      <button class=\"round-button\" ui-sref='projects' ui-sref-active='Projects'>Projects</button>\n      <button class=\"round-button\" ui-sref='about' ui-sref-active='About'>About</button>\n      <button class=\"round-button\" ui-sref='blog' ui-sref-active='Blog'>Blog</button>\n  </div>\n\n\n  <br>\n\n</nav>\n`;\n\n//# sourceURL=webpack:///./src/app/shared/nav/nav.html.js?");
+
+/***/ }),
+
+/***/ "./src/app/shared/nav/nav.scss":
+/*!*************************************!*\
+  !*** ./src/app/shared/nav/nav.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/app/shared/nav/nav.scss?");
 
 /***/ })
 
