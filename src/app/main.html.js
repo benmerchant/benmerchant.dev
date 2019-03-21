@@ -1,3 +1,8 @@
+// import <nav>
+
+// import <footer>
+import {footerTemplate} from './shared/footer/footer.html';
+
 // import image to place in html
 import logoLightBlueImported from './assets/imgs/logos/logo_lightblue_knockout.png';
 
@@ -36,6 +41,6 @@ export const mainTemplate = `
         blog state div - (hardcoded in main.component)
       </div>
     </div>
-    <footer><h1>Footer</h1></footer>
+    ${footerTemplate}
   </div>
 `;

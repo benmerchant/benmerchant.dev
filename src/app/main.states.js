@@ -47,3 +47,10 @@ export const projectsState = {
   url: '/projects',
   component: 'projects'
 };
+
+// export const footerState = {
+//   parent: 'main',
+//   name: 'footer',
+//   url: '/footer',
+//   component: 'footer'
+// };

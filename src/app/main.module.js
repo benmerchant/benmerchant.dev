@@ -22,11 +22,13 @@ import { home } from './components/home/home.component';
 import { about } from './components/about/about.component';
 import { blog } from './components/blog/blog.component';
 import { projects } from './components/projects/projects.component';
+// import { footer } from './shared/footer/footer.component';
 // import { ComponentsModule } from './components/components.module';
 // import { SharedModule } from './shared/shared.module';
 import primitive from './assets/styles/vendor/primitive/main.scss';
 import styles from './main.scss';
 
+// import {mainState,homeState,aboutState,blogState,projectsState,footerState} from  './main.states';
 import {mainState,homeState,aboutState,blogState,projectsState} from  './main.states';
 
 // this needs to go somewhere else
@@ -59,6 +61,7 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   $stateRegistry.register(aboutState);
   $stateRegistry.register(blogState);
   $stateRegistry.register(projectsState);
+  // $stateRegistry.register(footerState);
   console.log($stateRegistry);
 
   // register these plugins to our main module
@@ -81,3 +84,4 @@ BEN_DEV_MAIN.component('home',home);
 BEN_DEV_MAIN.component('about',about);
 BEN_DEV_MAIN.component('blog',blog);
 BEN_DEV_MAIN.component('projects',projects);
+// BEN_DEV_MAIN.component('footer',footer);
