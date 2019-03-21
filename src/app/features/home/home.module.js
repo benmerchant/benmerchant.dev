@@ -7,7 +7,11 @@
  * Author: Ben Merchant
 */
 
-angular
-  .module('components.admin', [
-    'ui.router'
-  ]);
+
+// default state: 'home' - 404
+export const homeState = {
+  parent: 'main',
+  name: 'home',
+  url: '/home',
+  component: 'HomeComponent'
+};

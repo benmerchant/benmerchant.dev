@@ -1,22 +1,20 @@
 // 'use strict';
 /*
-* Title: app.module.js
+* Title: main.module.js
 *
 * Description: root/app level module for the site
  *
  * Author: Ben Merchant
 */
+'use strict';
 
 
-
-//// still havent used these 2
+// put vendor libraries in a different folder
+import * as angular from 'angular';
+import uiRouter from '@uirouter/angularjs';
 import { StickyStatesPlugin } from '@uirouter/sticky-states';
 import { DSRPlugin } from '@uirouter/dsr';
-
-/// good for dev
 import { visualizer } from '@uirouter/visualizer';
-
-//// nor this one
 import ocLazyLoad from 'oclazyload';
 
 import { main } from './main.component';
@@ -35,6 +33,11 @@ import {mainState,homeState,aboutState,blogState} from  './main.states';
 
 
 
+console.log('MAIN - module definition');
+export const BEN_DEV_MAIN = angular.module('bendev',[
+  uiRouter,
+  ocLazyLoad
+]);
 
 BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   console.log('MAIN - config');

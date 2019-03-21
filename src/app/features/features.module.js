@@ -7,3 +7,6 @@
 */
 
 // gather all features here
+import HomeModule from './home/home.module';
+import AboutModule from './about/about.module';
+import BlogModule from './blog/blog.module';

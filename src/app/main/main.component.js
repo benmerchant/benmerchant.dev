@@ -7,7 +7,7 @@
  * Author: Ben Merchant
 */
 // import image to place in html
-import logoLightBlueImported from './assets/imgs/logos/logo_lightblue_knockout.png';
+import logoLightBlueImported from '../assets/imgs/logos/logo_lightblue_knockout.png';
 
 const logoLightBlueElement = new Image();
 logoLightBlueElement.src = logoLightBlueImported;
