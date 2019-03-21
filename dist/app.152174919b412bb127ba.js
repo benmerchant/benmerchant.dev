@@ -1286,7 +1286,19 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"about\", function() { return about; });\nconsole.log('about.component');\nconst about = {\n  template: `\n  <div class='about-container'>\n    <h3>About Me</h3>\n    <ul>\n      <li>Ben Merchant</li>\n      <li>Full Stack JavaScript Developer</li>\n      <li>Recent College Grad</li>\n    </ul>\n  </div> <!-- # end .about-container -->\n  `\n};\n\n//# sourceURL=webpack:///./src/app/components/about/about.component.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"about\", function() { return about; });\n/* harmony import */ var _about_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./about.html */ \"./src/app/components/about/about.html.js\");\n\nconsole.log('about.component');\nconst about = {\n  template: _about_html__WEBPACK_IMPORTED_MODULE_0__[\"aboutTemplate\"]\n};\n\n//# sourceURL=webpack:///./src/app/components/about/about.component.js?");
+
+/***/ }),
+
+/***/ "./src/app/components/about/about.html.js":
+/*!************************************************!*\
+  !*** ./src/app/components/about/about.html.js ***!
+  \************************************************/
+/*! exports provided: aboutTemplate */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"aboutTemplate\", function() { return aboutTemplate; });\nconst aboutTemplate = `\n<div class='about-container'>\n  <h3>About Me</h3>\n  <ul>\n    <li>Ben Merchant</li>\n    <li>Full Stack JavaScript Developer</li>\n    <li>Recent College Grad</li>\n  </ul>\n</div> <!-- # end .about-container -->\n`;\n\n//# sourceURL=webpack:///./src/app/components/about/about.html.js?");
 
 /***/ }),
 
@@ -1370,7 +1382,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mainTemplate\", function() { return mainTemplate; });\n/* harmony import */ var _shared_nav_nav_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shared/nav/nav.html */ \"./src/app/shared/nav/nav.html.js\");\n/* harmony import */ var _shared_footer_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shared/footer/footer.html */ \"./src/app/shared/footer/footer.html.js\");\n// import <nav> & <footer>\n\n\nconst mainTemplate = `\n  <div id=\"the-container\" class='container'>\n    ${_shared_nav_nav_html__WEBPACK_IMPORTED_MODULE_0__[\"navTemplate\"]}\n    <div id='big-div' class=\"flex-row\">\n      <span id='title' class=\"flex-100-wide bg-light-bluish text-center\">\n        <h1>Main Body</h1>\n      </span>\n\n      <div ui-view class=\"flex-100-wide text-center\"></div>\n\n\n      <div class=\"flex-100-wide text-center\" ui-view='home' ng-show='$ctrl.isActive(\"home.**\")'>\n        home state div - (hardcoded in main.component)\n      </div>\n      <div class=\"flex-100-wide text-center\" ui-view='projects' ng-show='$ctrl.isActive(\"projects.**\")'>\n        Projects state div - (hardcoded in main.component)\n      </div>\n      <div class=\"flex-100-wide text-center\" ui-view='about' ng-show='$ctrl.isActive(\"about.**\")'>\n        About state div - (hardcoded in main.component)\n      </div>\n      <div class=\"flex-100-wide text-center\" ui-view='blog' ng-show='$ctrl.isActive(\"blog.**\")'>\n        blog state div - (hardcoded in main.component)\n      </div>\n    </div>\n    ${_shared_footer_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"footerTemplate\"]}\n  </div>\n`;\n\n//# sourceURL=webpack:///./src/app/main.html.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mainTemplate\", function() { return mainTemplate; });\n/* harmony import */ var _shared_nav_nav_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shared/nav/nav.html */ \"./src/app/shared/nav/nav.html.js\");\n/* harmony import */ var _shared_footer_footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shared/footer/footer.html */ \"./src/app/shared/footer/footer.html.js\");\n// import <nav> & <footer>\n\n\nconst mainTemplate = `\n  <div id=\"the-container\" class='container'>\n    ${_shared_nav_nav_html__WEBPACK_IMPORTED_MODULE_0__[\"navTemplate\"]}\n    <div id='big-div' class=\"flex-row\">\n      <span id='title' class=\"flex-100-wide bg-light-bluish text-center\">\n        <h1>Main Body</h1>\n      </span>\n\n      <div ui-view class=\"flex-100-wide text-center\"></div>\n\n\n      <div class=\"flex-100-wide text-center\" ui-view='home' ng-show='$ctrl.isActive(\"home.**\")'>\n        home state div - (hardcoded in main.component)\n      </div>\n\n      <div class=\"flex-100-wide text-center\" ui-view='projects' ng-show='$ctrl.isActive(\"projects.**\")'>\n        Projects state div - (hardcoded in main.component)\n      </div>\n\n      <div class=\"flex-100-wide text-center\" ui-view='about' ng-show='$ctrl.isActive(\"about.**\")'>\n        About state div - (hardcoded in main.component)\n      </div>\n\n      <div class=\"flex-100-wide text-center\" ui-view='blog' ng-show='$ctrl.isActive(\"blog.**\")'>\n        blog state div - (hardcoded in main.component)\n      </div>\n      \n    </div>\n    ${_shared_footer_footer_html__WEBPACK_IMPORTED_MODULE_1__[\"footerTemplate\"]}\n  </div>\n`;\n\n//# sourceURL=webpack:///./src/app/main.html.js?");
 
 /***/ }),
 
