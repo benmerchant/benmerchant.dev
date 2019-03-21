@@ -41,66 +41,66 @@ class MainController {
   };
 };
 MainController.$inject = ['$state'];
-
 const vegeta = {
   controller: MainController,
   bindings: {name: '@'},
   template: `
     <h1>IS THIS STATE WORKING????</h1>
+    <hr>
+    <h1>home to my site!</h1>
+    <button ui-sref='blog'>Home</button>
+    <button ui-sref='about'>About</button>
+    <button ui-sref='blog'>Blog</button>
+    <hr>
     <ui-view><ui-view>
   `
 };
 
+
+
+
 //// only State for now!!!!
-const theOnlyState = {
-  name: 'theOnly',
-  url: '/hadToGiveThisSomeNameBecauseDoubleSlashesFail',
-  // component: 'vegeta',
+const topState = {
+  name: 'top',
+  url: '/top',
+  redirectTo: 'home',
   controller: MainController,
   template: `
-    <h1>IS THIS STATE WORKING????</h1>
-    <ui-view><ui-view>
-  `,
-  redirectTo: 'home'
+    <h1>Top State, Contain Entire Page!</h1>
+    <a ui-sref='home' ui-sref-active='active' ui-sref='home'>home</a>
+    <a ui-sref='about' ui-sref-active='active' ui-sref='about'>About</a>
+    <a ui-sref='blog' ui-sref-active='active' ui-sref='blog'>Blog</a>
+    <div style='border: 1rem solid blue;'>
+      <ui-view><ui-view>
+    </div>
+  `
 };
 // default state: 'home' - 404
 const homeState = {
-  parent: 'theOnly',
+  parent: 'top',
   name: 'home',
   url: '/home',
-  // component: 'home',
   template: '<h3>This is the home Template</h3>'
 };
 
-// const aboutState = {
-//   parent: 'goku',
-//   name: 'about',
-//   url: '/about',
-//   component: 'about'
-// };
-//
-// const blogState = {
-//   parent: 'goku',
-//   name: 'blog',
-//   url: '/blog',
-//   component: 'blog'
-// };
+const aboutState = {
+  parent: 'top',
+  name: 'about',
+  url: '/about',
+  template: '<h3>This is the about Template</h3>'
+};
 
+const blogState = {
+  parent: 'top',
+  name: 'blog',
+  url: '/blog',
+  template: '<h3>This is the blog Template</h3>'
+};
 
-
-console.log('MAIN - module definition');
-export const BEN_DEV_MAIN = angular.module('bendev',[
-  uiRouter
-  // ,
-  // ocLazyLoad
-]);
+export const BEN_DEV_MAIN = angular.module('bendev',[uiRouter]);
 
 BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
-  console.log('MAIN - config');
-  // https://github.com/ui-router/sample-app-angularjs/blob/ac107905c6eba60aca4229f0648102c33b3ee128/app/main/main.module.js
-  // Enable tracing of each TRANSITION... (check the javascript console)
-  // This syntax `$trace.enable(1)` is an alternative to `$trace.enable("TRANSITION")`.
-  // Besides "TRANSITION", you can also enable tracing for : "RESOLVE", "HOOK", "INVOKE", "UIVIEW", "VIEWCONFIG"
+
   $uiRouter.trace.enable(1);
 
   // basically a 404
@@ -110,28 +110,14 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   const $stateRegistry = $uiRouter.stateRegistry;
 
 
-  $stateRegistry.register(theOnlyState);
+  $stateRegistry.register(topState);
   $stateRegistry.register(homeState);
+  $stateRegistry.register(aboutState);
+  $stateRegistry.register(blogState);
 
-
-
-
-
-
-
-
-
-
-
-  // $stateRegistry.register(mainState);
-
-  // $stateRegistry.register(aboutState);
   console.log($stateRegistry);
 
-  // register these plugins to our main module
-  ///////////////////////////$uiRouter.plugin(StickyStatesPlugin);
-  ///////////////////////////$uiRouter.plugin(DSRPlugin);
-  // show ui-router visualizer
+
 
 ////////// TURN VISUALIZER BACK ON //////////////
 
@@ -139,10 +125,3 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 
 /////////////////////////////////////////////////
 }]);
-
-// place this somewhere else. like a service module or something
-// BEN_DEV_MAIN.service('MainConfig', MainConfig);
-
-// BEN_DEV_MAIN.component('bendev',vegeta);
-// BEN_DEV_MAIN.component('home',home);
-// BEN_DEV_MAIN.component('about',about);
