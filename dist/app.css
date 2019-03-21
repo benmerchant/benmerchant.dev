@@ -643,11 +643,17 @@ caption {
   font-weight: bolder; }
 
 div#the-container nav {
-  border: 1rem ridge red; }
+  background-color: red; }
 
 div#the-container div#big-div {
-  border: 1rem ridge lightblue; }
+  background-color: lightblue; }
 
 div#the-container footer {
-  border: 1rem ridge grey; }
+  background-color: grey; }
+
+.flex-100-wide {
+  width: 100%; }
+
+.bg-light-bluish {
+  background-color: #769fe2; }
 
