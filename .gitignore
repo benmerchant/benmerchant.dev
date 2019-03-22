@@ -2,4 +2,8 @@
 notes.txt
 /oldFiles
 /aws
+<<<<<<< HEAD
 /src/app/components/miscHelpers/Globalvars.service.js
+=======
+src/app/components/miscHelpers/globalvars.service.js
+>>>>>>> f6267269a7a1ecd0073a76ce64c200f698dcc16f

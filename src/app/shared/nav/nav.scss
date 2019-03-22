@@ -16,6 +16,19 @@ nav div {
   align-content: center;
   justify-content: center;
 }
+<<<<<<< HEAD
 #img-holder, #img-holder img{
   height: 100%;
+=======
+#img-holder img {
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+#img-holder {
+  width: 75px;
+  height: 75px;
+  border: 2px dashed darkblue;
+>>>>>>> f6267269a7a1ecd0073a76ce64c200f698dcc16f
 }

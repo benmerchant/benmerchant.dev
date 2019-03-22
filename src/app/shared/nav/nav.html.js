@@ -10,7 +10,7 @@ export const navTemplate = `
 
 
   <div id="img-holder" class="dis-flex">
-    <img src='${logoLightBlueImported}' width='88' />
+    <img src='${logoLightBlueImported}' />
   </div>
 
 
