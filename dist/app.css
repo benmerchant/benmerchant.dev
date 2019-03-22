@@ -28,6 +28,9 @@ footer h2 {
   margin: 0;
   font-size: 2rem; }
 
+div#icon-arena i {
+  font-size: 8.4rem; }
+
 /* https://ui-router.github.io/ng1/tutorial/helloworld#active-link */
 .active {
   background-color: red;

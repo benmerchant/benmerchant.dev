@@ -7,7 +7,7 @@ export const mainTemplate = `
     ${navTemplate}
     <div id='big-div' class="dis-flex flex-100-wide">
       <span id='title' class="dis-flex flex-100-wide bg-light-bluish text-center">
-        <h1>Main Body</h1>
+        <h1>Ben Merchant dot dev</h1>
       </span>
 
       <div ui-view class="flex-100-wide text-center dis-flex x-center"></div>
