@@ -8,8 +8,8 @@
 
 // gather all components here
 
-angular
-  .module('components', [
-    'components.admin',
-    'components.blog'
-  ]);
+// angular
+//   .module('components', [
+//     'components.admin',
+//     'components.blog'
+//   ]);

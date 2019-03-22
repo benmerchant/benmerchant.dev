@@ -25,8 +25,9 @@ import { projects } from './components/projects/projects.component';
 // import { footer } from './shared/footer/footer.component';
 // import { ComponentsModule } from './components/components.module';
 // import { SharedModule } from './shared/shared.module';
-import primitive from './assets/styles/vendor/primitive/main.scss';
 import styles from './main.scss';
+import primitive from './assets/styles/vendor/primitive/main.scss';
+
 
 // import {mainState,homeState,aboutState,blogState,projectsState,footerState} from  './main.states';
 import {mainState,homeState,aboutState,blogState,projectsState} from  './main.states';

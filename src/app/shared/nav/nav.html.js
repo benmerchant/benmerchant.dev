@@ -6,15 +6,15 @@ const logoLightBlueElement = new Image();
 logoLightBlueElement.src = logoLightBlueImported;
 
 export const navTemplate = `
-<nav class="flex-row">
+<nav class="dis-flex flex-100-wide">
 
 
-  <div class="flex-small">
-    <img src='${logoLightBlueImported}' width='100' />
+  <div id="img-holder" class="dis-flex">
+    <img src='${logoLightBlueImported}' width='88' />
   </div>
 
 
-  <div class="flex-small flex-row vertical-center just-even" >
+  <div class="dis-flex" >
       <button class="round-button" ui-sref='home' ui-sref-active='Home'>Home</button>
       <button class="round-button" ui-sref='projects' ui-sref-active='Projects'>Projects</button>
       <button class="round-button" ui-sref='about' ui-sref-active='About'>About</button>
@@ -22,7 +22,6 @@ export const navTemplate = `
   </div>
 
 
-  <br>
 
 </nav>
 `

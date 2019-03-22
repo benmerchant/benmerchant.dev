@@ -1,3 +1,19 @@
 .just-even {
   justify-content: space-evenly;
 }
+nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+nav div {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+#img-holder {
+  padding: 9px;
+}

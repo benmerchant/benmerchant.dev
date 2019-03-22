@@ -3,6 +3,15 @@
 .active {
   background-color: red; font-weight: bolder;
 }
+div#big-div{
+  min-height: 67vh;
+  max-width: 75vw;
+}
+div#big-div, div#the-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 // border the three main areas to help delineation
 div#the-container nav {
   background-color: red;
@@ -12,6 +21,8 @@ div#the-container div#big-div {
 }
 div#the-container footer {
   background-color: grey;
+  height: 99px;
+  align-content: center;
 }
 .flex-100-wide {
   width: 100%;
@@ -20,3 +31,18 @@ div#the-container footer {
 .bg-light-bluish {
   background-color: rgb(118, 159, 226);
 }
+
+.dis-flex {
+  display: flex;
+}
+span#title, .x-center{
+  justify-content: center;
+}
+span#title {
+  max-height: 80px;
+}
+
+div#the-container {
+
+    justify-content: center;
+  }

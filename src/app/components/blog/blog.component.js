@@ -3,7 +3,10 @@ export const blog = {
   template: `
   <div class='blog-container'>
     <h3>Blog</h3>
-    <div style='background:red;padding:25px;'>- Blog posts -</div>
+    <div style='background:blue;padding:25px;color:white;'>
+      - Blog posts -<br>
+      will go here soon
+    </div>
   </div> <!-- # end .blog-container -->
   `
 };
