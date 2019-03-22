@@ -6,6 +6,10 @@ nav {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
+  background-color: #2f7cb4;
+  min-height: 99px;
+  max-height: 99px;
+  height: 99px;
 }
 
 nav div {
@@ -15,5 +19,5 @@ nav div {
   justify-content: center;
 }
 #img-holder {
-  padding: 9px;
+
 }

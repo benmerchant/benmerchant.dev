@@ -1429,7 +1429,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"footerTemplate\", function() { return footerTemplate; });\nconst footerTemplate = `\n  <footer class='dis-flex flex-100-wide'>\n    <h2>\n      &copy; 2019 - Ben Merchant\n    </h2>\n  </footer>\n`;\n\n//# sourceURL=webpack:///./src/app/shared/footer/footer.html.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"footerTemplate\", function() { return footerTemplate; });\n/* harmony import */ var _footer_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.scss */ \"./src/app/shared/footer/footer.scss\");\n/* harmony import */ var _footer_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_footer_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nconst footerTemplate = `\n  <footer class='dis-flex flex-100-wide'>\n    <h2>\n      &copy; 2019 - Ben Merchant\n    </h2>\n  </footer>\n`;\n\n//# sourceURL=webpack:///./src/app/shared/footer/footer.html.js?");
+
+/***/ }),
+
+/***/ "./src/app/shared/footer/footer.scss":
+/*!*******************************************!*\
+  !*** ./src/app/shared/footer/footer.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/app/shared/footer/footer.scss?");
 
 /***/ }),
 

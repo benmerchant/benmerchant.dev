@@ -3,27 +3,27 @@
 .active {
   background-color: red; font-weight: bolder;
 }
+div#the-container {
+  justify-content: center;
+  height: 100vh;
+  min-height: 100vh;
+
+}
 div#big-div{
   min-height: 67vh;
   max-width: 75vw;
+  margin-top: 0;
 }
 div#big-div, div#the-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-// border the three main areas to help delineation
-div#the-container nav {
-  background-color: red;
-}
+
 div#the-container div#big-div {
   background-color: lightblue;
 }
-div#the-container footer {
-  background-color: grey;
-  height: 99px;
-  align-content: center;
-}
+
 .flex-100-wide {
   width: 100%;
 }
@@ -41,8 +41,3 @@ span#title, .x-center{
 span#title {
   max-height: 80px;
 }
-
-div#the-container {
-
-    justify-content: center;
-  }
