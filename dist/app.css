@@ -17,6 +17,17 @@ nav div {
   align-content: center;
   justify-content: center; }
 
+#img-holder img {
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto; }
+
+#img-holder {
+  width: 75px;
+  height: 75px;
+  border: 2px dashed darkblue; }
+
 footer {
   background-color: lightsteelblue;
   color: white;
@@ -30,44 +41,6 @@ footer h2 {
 
 div#icon-arena i {
   font-size: 8.4rem; }
-
-/* https://ui-router.github.io/ng1/tutorial/helloworld#active-link */
-.active {
-  background-color: red;
-  font-weight: bolder; }
-
-div#the-container {
-  justify-content: center;
-  height: 100vh;
-  min-height: 100vh; }
-
-div#big-div {
-  min-height: 67vh;
-  max-width: 75vw;
-  margin-top: 0; }
-
-div#big-div, div#the-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-div#the-container div#big-div {
-  background-color: lightblue; }
-
-.flex-100-wide {
-  width: 100%; }
-
-.bg-light-bluish {
-  background-color: #769fe2; }
-
-.dis-flex {
-  display: flex; }
-
-span#title, .x-center {
-  justify-content: center; }
-
-span#title {
-  max-height: 80px; }
 
 /*! Primitive
  * A front end Sass boilerplate
@@ -704,4 +677,42 @@ caption {
   =============== */
 /* Layout
   =============== */
+
+/* https://ui-router.github.io/ng1/tutorial/helloworld#active-link */
+.active {
+  background-color: red;
+  font-weight: bolder; }
+
+div#the-container {
+  justify-content: center;
+  height: 100vh;
+  min-height: 100vh; }
+
+div#big-div {
+  min-height: 67vh;
+  max-width: 75vw;
+  margin-top: 0; }
+
+div#big-div, div#the-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+div#the-container div#big-div {
+  background-color: lightblue; }
+
+.flex-100-wide {
+  width: 100%; }
+
+.bg-light-bluish {
+  background-color: #769fe2; }
+
+.dis-flex {
+  display: flex; }
+
+span#title, .x-center {
+  justify-content: center; }
+
+span#title {
+  max-height: 80px; }
 

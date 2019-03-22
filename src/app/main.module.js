@@ -15,33 +15,26 @@ import uiRouter from '@uirouter/angularjs';
 import { StickyStatesPlugin } from '@uirouter/sticky-states';
 import { DSRPlugin } from '@uirouter/dsr';
 import { visualizer } from '@uirouter/visualizer';
-import ocLazyLoad from 'oclazyload';
+// import ocLazyLoad from 'oclazyload';
 
 import { main } from './main.component';
 import { home } from './components/home/home.component';
 import { about } from './components/about/about.component';
 import { blog } from './components/blog/blog.component';
 import { projects } from './components/projects/projects.component';
-// import { footer } from './shared/footer/footer.component';
-// import { ComponentsModule } from './components/components.module';
-// import { SharedModule } from './shared/shared.module';
-import styles from './main.scss';
-import primitive from './assets/styles/vendor/primitive/main.scss';
 
+import primitive from './assets/styles/vendor/primitive/main.scss';
+import styles from './main.scss';
 
 // import {mainState,homeState,aboutState,blogState,projectsState,footerState} from  './main.states';
 import {mainState,homeState,aboutState,blogState,projectsState} from  './main.states';
 
-// this needs to go somewhere else
-// import {MainConfig} from './mainConfig.service';
 
-
+import {HOME_MODULE} from './components/home/home.module';
 
 console.log('MAIN - module definition');
-export const BEN_DEV_MAIN = angular.module('bendev',[
-  uiRouter,
-  ocLazyLoad
-]);
+export const BEN_DEV_MAIN = angular
+        .module('bendev',[uiRouter,HOME_MODULE.name]);
 
 BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   console.log('MAIN - config');

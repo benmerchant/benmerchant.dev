@@ -1,13 +1,16 @@
 /*
- * Title: admin.module.js
- * Name: components.contact
+ * Title: home.module.js
  *
- * Description: Admin module. Gathers all components for admin feature.
+ * Description: control the flow of data to and from the back end
  *
  * Author: Ben Merchant
 */
 
-angular
-  .module('components.admin', [
-    'ui.router'
-  ]);
+import {Globalvars} from '../miscHelpers/Globalvars.service';
+import {HomeService} from './home.service';
+
+export const HOME_MODULE = angular.module('home',[]);
+
+
+HOME_MODULE.service('HomeService', HomeService);
+HOME_MODULE.service('Globalvars', Globalvars);

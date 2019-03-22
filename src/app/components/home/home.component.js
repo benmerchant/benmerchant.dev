@@ -3,14 +3,31 @@ console.log('home.component');
 
 
 
-export const home = {
-  controller: function() {
+class HomeController {
+  constructor(HomeService) {
+    this.HomeService=HomeService;
+  };
+  $onInit(){
     this.phrase = 'Howdy!';
 
     // fun toggler to test functionality
     this.togglePhrase = function() {
         this.phrase = (this.phrase == 'Howdy!') ? 'JavaScript is fun!' : 'Howdy!'
     };
-  },
+
+    this.HomeService.getStaticArray((results) =>{
+      this.phraseArray = results;
+      console.log('HomeService inside HomeController');
+      console.log(this.phraseArray);
+    });
+
+  };
+};
+HomeController.$inject = ['HomeService'];
+
+
+
+export const home = {
+  controller: HomeController,
   template: homeTemplate
 };
