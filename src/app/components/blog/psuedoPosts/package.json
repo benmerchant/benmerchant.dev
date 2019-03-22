@@ -1,0 +1,9 @@
+{
+  "name": "job_fair",
+  "version": "1.0.0",
+  "description": "Just some quick string manipulation",
+  "main": "index.js",
+  "keywords": ["west","virginia","job","fair","career","day","grownups"],
+  "author": "Ben Merchant <benjaminmerchant@gmail.com>",
+  "license": "ISC"
+}

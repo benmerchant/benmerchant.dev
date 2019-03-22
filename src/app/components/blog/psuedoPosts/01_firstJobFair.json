@@ -1,0 +1,16 @@
+{
+  "title": "A Day at the (Job) Fair",
+  "imgs": [
+    "01_firstJobFair.jpeg"
+  ],
+  "tags": [
+    "job fair",
+    "career",
+    "resume",
+    "Infor",
+    "charleston",
+    "west virginia"
+  ],
+  "body": "[P]Today was the Kanawha Valley Job Fair at the former Charleston Civic Center. I'd like to start by mentioning how nice the Coliseum looks now. It felt like one was in a big city somewhere. Saw plenty of people I knew as well as hundreds of people I feel like I’ve never seen before in my life, an unusual feeling for living in such a small town. There was the palpable buzz of opportunity and optimism that is not often felt in this town. The fair, combined with the new remodel, had the air filled with the electricity of hope, something in short supply these days. [BR]  Of the two hundred assorted companies there, I was there for one only. A large cloud company, excuse me, the largest cloud solutions provider, that my former landlord mentioned to me when he came into our restaurant a month or two ago. I don’t know much about them other than the general corporate website. But whatever is they exactly do, they must be good at it considering they are so large that in order to expand they are opening an office in our humble municipality. Fine by me. [BR]Talked with a couple gentlemen about language preferences. One was besmirching my beloved JavaScript. Sacrilege! They told me about what they did and what they’re looking for. A good professional experience all-in-all. Was nice to actually speak with other coders in real life. I only have one other programmer friend and he lives four hundred miles away, relegating our friendship to exist mostly thanks to Zuck’s Messenger. [BR][side note] Facebook was there with something called ‘Blueprint’. I don’t know what it is, and I don’t care. I could reasonably ascertain they aren’t hiring developers, and if they were I wouldn’t be interested. Hey, you have to stand for something or you’ll fall for anything. But that’s a whole other post [BR]Who knows if I’ll ever hear from them, but today was a good experience. Good enough to make me run home and write this. The funny thing is, I’m experiencing CORS issues connecting the two half of my site together. So, I am writing this in word, which I would do anyways, then I’m going to put copy it into a JSON file, then I’m going to write a blog service that will import it, parse it, and inject it into HTML. Not much different than if my API would let me, its creator, talk to it.Almost, forgot to mention the script I wrote this morning. Too long to explain right now. But I can’t believe I forgot to mention it to that gentleman when I mentioned that that’s a large portion of what they do. You can check it on the Projects page. It’s hideous, I know, but the info is there, quality content over curb appeal. Those who know will know.[side note] It will talk to Postman and even a browser address bar direct request, just not from a different domain. Didn’t have this problem before.So this will be a short post with no editing or rewrites. I have to go to work soon. And I still need to write that service to post blogs to the site. And then I have to publish it. Hopefully one day very soon I’ll be getting off of work around this time of day.",
+  "date": "1553283543 UTC"
+}

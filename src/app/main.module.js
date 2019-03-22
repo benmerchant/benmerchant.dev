@@ -31,10 +31,11 @@ import {mainState,homeState,aboutState,blogState,projectsState} from  './main.st
 
 
 import {HOME_MODULE} from './components/home/home.module';
+import {BLOG_MODULE} from './components/blog/blog.module';
 
 console.log('MAIN - module definition');
 export const BEN_DEV_MAIN = angular
-        .module('bendev',[uiRouter,HOME_MODULE.name]);
+        .module('bendev',[uiRouter,HOME_MODULE.name,BLOG_MODULE.name]);
 
 BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   console.log('MAIN - config');

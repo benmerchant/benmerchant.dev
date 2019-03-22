@@ -1,4 +1,9 @@
 console.log('blog.component');
+
+
+
+
+
 export const blog = {
   template: `
   <div class='blog-container'>

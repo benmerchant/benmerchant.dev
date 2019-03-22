@@ -15,6 +15,9 @@ module.exports = {
   entry: { app: path.join(__dirname, 'src/app/main.module.js') },
   mode: 'development',
   devtool: 'eval',
+  node: {
+  fs:"empty"
+},
   output: {
     filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
@@ -36,7 +39,12 @@ module.exports = {
     new MiniCssExtractPlugin({filename: '[name].css',chunkFilename: '[id].css'})
   ],
   module: {
+
     rules: [
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
       {
         test: /\.scss$/,
         // include: [
