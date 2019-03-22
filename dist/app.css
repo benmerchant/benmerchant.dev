@@ -7,8 +7,6 @@ nav {
   align-content: center;
   justify-content: space-around;
   background-color: #2f7cb4;
-  min-height: 99px;
-  max-height: 99px;
   height: 99px; }
 
 nav div {
@@ -16,6 +14,9 @@ nav div {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center; }
+
+#img-holder, #img-holder img {
+  height: 100%; }
 
 footer {
   background-color: lightsteelblue;
@@ -38,13 +39,10 @@ div#icon-arena i {
 
 div#the-container {
   justify-content: center;
-  height: 100vh;
   min-height: 100vh; }
 
 div#big-div {
-  min-height: 67vh;
-  max-width: 75vw;
-  margin-top: 0; }
+  max-width: 75vw; }
 
 div#big-div, div#the-container {
   display: flex;

@@ -5,14 +5,14 @@
 }
 div#the-container {
   justify-content: center;
-  height: 100vh;
+
   min-height: 100vh;
 
 }
 div#big-div{
-  min-height: 67vh;
+  // min-height: 67vh;
   max-width: 75vw;
-  margin-top: 0;
+
 }
 div#big-div, div#the-container {
   display: flex;

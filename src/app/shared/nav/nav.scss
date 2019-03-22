@@ -7,8 +7,6 @@ nav {
   align-content: center;
   justify-content: space-around;
   background-color: #2f7cb4;
-  min-height: 99px;
-  max-height: 99px;
   height: 99px;
 }
 
@@ -18,6 +16,6 @@ nav div {
   align-content: center;
   justify-content: center;
 }
-#img-holder {
-
+#img-holder, #img-holder img{
+  height: 100%;
 }
