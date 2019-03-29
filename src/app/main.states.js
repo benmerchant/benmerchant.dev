@@ -9,6 +9,7 @@
 */
 import {mainTemplate, mainController} from './main.component';
 import {home} from './components/home/home.component';
+import {nav} from './shared/nav/nav.component';
 import {aboutTemplate, aboutController} from './components/about/about.component';
 import {blogTemplate, blogController} from './components/blog/blog.component';
 import {projectsTemplate, projectsController} from './components/projects/projects.component';
@@ -17,6 +18,13 @@ export const mainState = {
   name: 'main',
   redirectTo: 'home',
   component: 'main'
+};
+
+export const navState = {
+  // parent: 'main',
+  name: 'nav',
+  // redirectTo: 'main',
+  component: 'nav'
 };
 
 // default state: 'home' - 404
@@ -47,10 +55,3 @@ export const projectsState = {
   url: '/projects',
   component: 'projects'
 };
-
-// export const footerState = {
-//   parent: 'main',
-//   name: 'footer',
-//   url: '/footer',
-//   component: 'footer'
-// };
