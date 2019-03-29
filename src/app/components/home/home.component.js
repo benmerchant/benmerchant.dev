@@ -1,8 +1,6 @@
 import {homeTemplate} from './home.html'
 console.log('home.component');
 
-
-
 class HomeController {
   constructor(HomeService) {
     this.HomeService=HomeService;
@@ -21,11 +19,9 @@ class HomeController {
       console.log(this.phraseArray);
     });
 
-  };
+  }; // end $onInit
 };
 HomeController.$inject = ['HomeService'];
-
-
 
 export const home = {
   controller: HomeController,

@@ -1,14 +1,3 @@
-// get the static aray from the backend
-// angular.module('bendev').service('getHomeService',HomeService);
-//
-
-// import {apiUrl} from '../miscHelpers/globalvars.value';
-
-
-
-
-
-// forgot about es6. I was copying my old services
 export class HomeService {
 
   constructor($http, Globalvars){
@@ -20,7 +9,6 @@ export class HomeService {
     // i spent so much time on this. Im not sending the statuses back right
 
     // hard code apiURL real quick...
-    // TryThisUrl = 'localhost:3005/api/home';
     // get teh static Array from the back end
     // next we'll do MongoDB
 

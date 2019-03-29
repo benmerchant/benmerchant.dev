@@ -55,8 +55,6 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   $stateRegistry.register(aboutState);
   $stateRegistry.register(blogState);
   $stateRegistry.register(projectsState);
-  // $stateRegistry.register(footerState);
-  console.log($stateRegistry);
 
   // register these plugins to our main module
   ///////////////////////////$uiRouter.plugin(StickyStatesPlugin);
