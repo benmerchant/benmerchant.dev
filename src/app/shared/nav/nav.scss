@@ -1,3 +1,60 @@
+// from Tania
+$x-small: 600px;
+$small: 800px;
+$medium: 1000px;
+$large: 1200px;
+
+@media only screen and (max-width: $x-small) {
+  div#menu-buttons{
+    display: none;
+  }
+  .show-on-small {
+    display: block;
+  }
+  i.show-on-small {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width:$x-small) and (max-width: $small) {
+  div#menu-buttons{
+    display: flex;
+  }
+  .show-on-small {
+    display: none;
+  }
+}
+@media only screen and (min-width:$small) and (max-width: $medium) {
+  div#menu-buttons{
+    display: flex;
+  }
+  .show-on-small {
+    display: none;
+  }
+}
+@media only screen and (min-width:$medium) and (max-width: $large) {
+  div#menu-buttons{
+    display: flex;
+  }
+  .show-on-small {
+    display: none;
+  }
+}
+@media only screen and (min-width:$large) {
+  div#menu-buttons{
+    display: flex;
+  }
+  .show-on-small {
+    display: none;
+  }
+}
+// div#menu-buttons{
+//   height:
+// }
+
+div#menu-buttons button {
+  margin: 0;
+}
+
 .just-even {
   justify-content: space-evenly;
 }

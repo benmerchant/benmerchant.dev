@@ -1,3 +1,38 @@
-div#icon-arena i {
+div#icon-arena {
   font-size: 8.4rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+// from Tania
+$x-small: 600px;
+$small: 800px;
+$medium: 1000px;
+$large: 1200px;
+
+@media only screen and (max-width: $x-small) {
+  div#icon-arena i {
+    width: 100%;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width:$x-small) and (max-width: $small) {
+  div#icon-arena i {
+    background-color: red;
+  }
+}
+@media only screen and (min-width:$small) and (max-width: $medium) {
+  div#icon-arena i {
+    background-color: blue;
+  }
+}
+@media only screen and (min-width:$medium) and (max-width: $large) {
+  div#icon-arena i {
+    background-color: white;
+  }
+}
+@media only screen and (min-width:$large) {
+  div#icon-arena i {
+    background-color: green;
+  }
 }

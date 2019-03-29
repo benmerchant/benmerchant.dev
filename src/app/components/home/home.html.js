@@ -6,7 +6,7 @@ export const homeTemplate =
       Welcome to my site.
     </h3>
   </div>
-  <div id="icon-arena">
+  <div id="icon-arena" class="flex-100-wide">
     <i class="fab fa-angular"></i>
     <i class="fab fa-aws"></i>
     <i class="fab fa-node-js"></i>

@@ -1,3 +1,38 @@
+@media only screen and (max-width: 600px) {
+  div#menu-buttons {
+    display: none; }
+  .show-on-small {
+    display: block; }
+  i.show-on-small {
+    font-size: 5rem; } }
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  div#menu-buttons {
+    display: flex; }
+  .show-on-small {
+    display: none; } }
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  div#menu-buttons {
+    display: flex; }
+  .show-on-small {
+    display: none; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  div#menu-buttons {
+    display: flex; }
+  .show-on-small {
+    display: none; } }
+
+@media only screen and (min-width: 1200px) {
+  div#menu-buttons {
+    display: flex; }
+  .show-on-small {
+    display: none; } }
+
+div#menu-buttons button {
+  margin: 0; }
+
 .just-even {
   justify-content: space-evenly; }
 
@@ -39,8 +74,32 @@ footer h2 {
   margin: 0;
   font-size: 2rem; }
 
-div#icon-arena i {
-  font-size: 8.4rem; }
+div#icon-arena {
+  font-size: 8.4rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap; }
+
+@media only screen and (max-width: 600px) {
+  div#icon-arena i {
+    width: 100%;
+    font-size: 2em; } }
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  div#icon-arena i {
+    background-color: red; } }
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  div#icon-arena i {
+    background-color: blue; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  div#icon-arena i {
+    background-color: white; } }
+
+@media only screen and (min-width: 1200px) {
+  div#icon-arena i {
+    background-color: green; } }
 
 /*! Primitive
  * A front end Sass boilerplate

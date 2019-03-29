@@ -18,6 +18,7 @@ import { visualizer } from '@uirouter/visualizer';
 // import ocLazyLoad from 'oclazyload';
 
 import { main } from './main.component';
+import { NavComponent } from './shared/nav/nav.component';
 import { home } from './components/home/home.component';
 import { about } from './components/about/about.component';
 import { blog } from './components/blog/blog.component';
@@ -27,14 +28,18 @@ import primitive from './assets/styles/vendor/primitive/main.scss';
 import styles from './main.scss';
 
 // import {mainState,homeState,aboutState,blogState,projectsState,footerState} from  './main.states';
-import {mainState,homeState,aboutState,blogState,projectsState} from  './main.states';
+import {mainState,navState,homeState,aboutState,blogState,projectsState} from  './main.states';
 
-
+import {NAV_MODULE} from './shared/nav/nav.module';
 import {HOME_MODULE} from './components/home/home.module';
 
 console.log('MAIN - module definition');
 export const BEN_DEV_MAIN = angular
-        .module('bendev',[uiRouter,HOME_MODULE.name]);
+        .module('bendev',[
+          uiRouter,
+          NAV_MODULE.name,
+          HOME_MODULE.name
+        ]);
 
 BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   console.log('MAIN - config');
@@ -51,14 +56,15 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   const $stateRegistry = $uiRouter.stateRegistry;
 
   $stateRegistry.register(mainState);
+  $stateRegistry.register(navState);
   $stateRegistry.register(homeState);
   $stateRegistry.register(aboutState);
   $stateRegistry.register(blogState);
   $stateRegistry.register(projectsState);
 
   // register these plugins to our main module
-  ///////////////////////////$uiRouter.plugin(StickyStatesPlugin);
-  ///////////////////////////$uiRouter.plugin(DSRPlugin);
+$uiRouter.plugin(StickyStatesPlugin);
+$uiRouter.plugin(DSRPlugin);
   // show ui-router visualizer
 
 ////////// TURN VISUALIZER BACK ON //////////////
@@ -72,6 +78,7 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 // BEN_DEV_MAIN.service('MainConfig', MainConfig);
 
 BEN_DEV_MAIN.component('main',main);
+BEN_DEV_MAIN.component('nav',NavComponent);
 BEN_DEV_MAIN.component('home',home);
 BEN_DEV_MAIN.component('about',about);
 BEN_DEV_MAIN.component('blog',blog);
