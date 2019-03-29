@@ -42,7 +42,7 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   // Enable tracing of each TRANSITION... (check the javascript console)
   // This syntax `$trace.enable(1)` is an alternative to `$trace.enable("TRANSITION")`.
   // Besides "TRANSITION", you can also enable tracing for : "RESOLVE", "HOOK", "INVOKE", "UIVIEW", "VIEWCONFIG"
-  $uiRouter.trace.enable(1);
+  // $uiRouter.trace.enable(1);
 
   // basically a 404
   const $urlService = $uiRouter.urlService;
@@ -55,8 +55,6 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
   $stateRegistry.register(aboutState);
   $stateRegistry.register(blogState);
   $stateRegistry.register(projectsState);
-  // $stateRegistry.register(footerState);
-  console.log($stateRegistry);
 
   // register these plugins to our main module
   ///////////////////////////$uiRouter.plugin(StickyStatesPlugin);
