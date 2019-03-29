@@ -6,7 +6,7 @@ export class HomeService {
     this.apiUrl = `${Globalvars.apiUrl}/home`;
     this.$http = $http;
     this.method = 'GET';
-    this.url = 'http://localhost:3005/api/home';
+    this.url = 'http://localhost:3000/api/home';
 }
 
 
