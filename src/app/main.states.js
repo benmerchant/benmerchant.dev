@@ -13,14 +13,16 @@ import {nav} from './shared/nav/nav.component';
 import {aboutTemplate, aboutController} from './components/about/about.component';
 import {blogTemplate, blogController} from './components/blog/blog.component';
 import {projectsTemplate, projectsController} from './components/projects/projects.component';
+import { StickyStatesPlugin } from '@uirouter/sticky-states';
+import { DSRPlugin } from '@uirouter/dsr';
 
-export const mainState = {
+const mainState = {
   name: 'main',
   redirectTo: 'home',
   component: 'main'
 };
 
-export const navState = {
+const navState = {
   // parent: 'main',
   name: 'nav',
   // redirectTo: 'main',
@@ -28,30 +30,39 @@ export const navState = {
 };
 
 // default state: 'home' - 404
-export const homeState = {
+const homeState = {
   parent: 'main',
   name: 'home',
   url: '/home',
   component: 'home'
 };
 
-export const aboutState = {
+const aboutState = {
   parent: 'main',
   name: 'about',
   url: '/about',
   component: 'about'
 };
 
-export const blogState = {
+const blogState = {
   parent: 'main',
   name: 'blog',
   url: '/blog',
   component: 'blog'
 };
 
-export const projectsState = {
+const projectsState = {
   parent: 'main',
   name: 'projects',
   url: '/projects',
   component: 'projects'
 };
+//https://github.com/ui-router/dsr/blob/master/examples/angularjs-webpack/app/router.config.js
+export const AllStates = [
+  mainState,
+  navState,
+  homeState,
+  aboutState,
+  blogState,
+  projectsState
+];
