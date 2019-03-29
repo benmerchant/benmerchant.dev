@@ -12,6 +12,9 @@ export const homeTemplate =
     <i class="fab fa-node-js"></i>
   </div>
   <div class='home-container flex-100-wide'>
+    <h2>{{$ctrl.displayPhrase}}</h2>
+    <p>ABOVE: new phrase array randomizer from MongoDB</p>
+    <p>BELOW: old phrase toggler fun</p>
     <h3>
       {{$ctrl.phrase}}
     </h3>
