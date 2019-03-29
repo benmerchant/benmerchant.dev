@@ -26,9 +26,6 @@ class HomeController {
           this.displayPhrase = (this.newDBZ!==this.dragonBallZ) ? this.phraseArray[this.newDBZ] : 'This can never happen';
       };
     });
-
-
-
   }; // end $onInit
 };
 HomeController.$inject = ['HomeService'];

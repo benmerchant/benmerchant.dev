@@ -13,7 +13,8 @@ export const homeTemplate =
   </div>
   <div class='home-container flex-100-wide'>
     <h2>{{$ctrl.displayPhrase}}</h2>
-    <p>ABOVE: new phrase array randomizer from MongoDB</p>
+    <p>ABOVE: new phrase array randomizer from MongoDB<br>
+    NOTE: if one says "these aren't from a DB, that's an artifact from when they werent, they are, "</p>
     <p>BELOW: old phrase toggler fun</p>
     <h3>
       {{$ctrl.phrase}}
