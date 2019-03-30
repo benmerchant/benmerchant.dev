@@ -5,7 +5,7 @@ import navverStyles from './navver.scss';
 const logoLightBlueElement = new Image();
 logoLightBlueElement.src = logoLightBlueImported;
 
-export const NavTemplate = `
+export const NavverTemplate = `
 <nav class="dis-flex flex-100-wide">
 
   <span class="show-on-small"></span>
