@@ -1,10 +1,11 @@
 // import <nav> & <footer>
-import {navTemplate} from './shared/nav/nav.html';
+import {NavverTemplate} from './shared/navver/navver.html';
+
 import {footerTemplate} from './shared/footer/footer.html';
 
 export const mainTemplate = `
   <div id="the-container" class='dis-flex flex-100-wide'>
-    ${navTemplate}
+    ${NavverTemplate}
     <div id='big-div' class="dis-flex flex-100-wide">
       <span id='title' class="dis-flex flex-100-wide bg-light-bluish text-center">
         <h1>Ben Merchant dot dev</h1>

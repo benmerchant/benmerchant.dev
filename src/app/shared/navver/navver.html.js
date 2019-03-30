@@ -1,11 +1,11 @@
 // import image to place in html
 import logoLightBlueImported from '../../assets/imgs/logos/logo_lightblue_knockout.png';
-import navStyles from './nav.scss';
+import navverStyles from './navver.scss';
 
 const logoLightBlueElement = new Image();
 logoLightBlueElement.src = logoLightBlueImported;
 
-export const NavTemplate = `
+export const NavverTemplate = `
 <nav class="dis-flex flex-100-wide">
 
   <span class="show-on-small"></span>
