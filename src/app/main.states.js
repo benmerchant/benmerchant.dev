@@ -9,7 +9,7 @@
 */
 import {mainTemplate, mainController} from './main.component';
 import {home} from './components/home/home.component';
-import {nav} from './shared/nav/nav.component';
+// import {nav} from './shared/nav/nav.component';
 import {aboutTemplate, aboutController} from './components/about/about.component';
 import {blogTemplate, blogController} from './components/blog/blog.component';
 import {projectsTemplate, projectsController} from './components/projects/projects.component';
@@ -22,12 +22,12 @@ const mainState = {
   component: 'main'
 };
 
-const navState = {
-  // parent: 'main',
-  name: 'nav',
-  // redirectTo: 'main',
-  component: 'nav'
-};
+// const navState = {
+//   // parent: 'main',
+//   name: 'nav',
+//   // redirectTo: 'main',
+//   component: 'nav'
+// };
 
 // default state: 'home' - 404
 const homeState = {
@@ -60,7 +60,7 @@ const projectsState = {
 //https://github.com/ui-router/dsr/blob/master/examples/angularjs-webpack/app/router.config.js
 export const AllStates = [
   mainState,
-  navState,
+  // navState,
   homeState,
   aboutState,
   blogState,

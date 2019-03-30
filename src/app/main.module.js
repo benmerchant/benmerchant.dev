@@ -18,7 +18,7 @@ import { visualizer } from '@uirouter/visualizer';
 // import ocLazyLoad from 'oclazyload';
 
 import { main } from './main.component';
-import { NavComponent } from './shared/nav/nav.component';
+// import { NavComponent } from './shared/nav/nav.component';
 import { home } from './components/home/home.component';
 import { about } from './components/about/about.component';
 import { blog } from './components/blog/blog.component';
@@ -30,14 +30,14 @@ import styles from './main.scss';
 // import {mainState,homeState,aboutState,blogState,projectsState,footerState} from  './main.states';
 import {AllStates} from  './main.states';
 
-import {NAV_MODULE} from './shared/nav/nav.module';
+// import {NAV_MODULE} from './shared/nav/nav.module';
 import {HOME_MODULE} from './components/home/home.module';
 
 console.log('MAIN - module definition');
 export const BEN_DEV_MAIN = angular
         .module('bendev',[
           uiRouter,
-          NAV_MODULE.name,
+          // NAV_MODULE.name,
           HOME_MODULE.name
         ]);
 
@@ -79,7 +79,7 @@ BEN_DEV_MAIN.config(['$uiRouterProvider', ($uiRouter) => {
 // BEN_DEV_MAIN.service('MainConfig', MainConfig);
 
 BEN_DEV_MAIN.component('main',main);
-BEN_DEV_MAIN.component('nav',NavComponent);
+// BEN_DEV_MAIN.component('nav',NavComponent);
 BEN_DEV_MAIN.component('home',home);
 BEN_DEV_MAIN.component('about',about);
 BEN_DEV_MAIN.component('blog',blog);
